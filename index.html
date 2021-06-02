@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./videoDiv.css">
+    <title>Huddle 01</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="header">
+            <img class="headerLogo" src="./logo.svg" alt="logo">
+        </div>
+        <div class="mainContent">
+            <div class="videoDiv">
+                <div class="videoCard">
+                    <div class="videoViewPort">
+                        <div class="profile" id="profile-div">
+                            <h1>A</h1> 
+                        </div>
+                        <div id="video-div">
+                            <video class="video-player" height="100%" width="100%" autoplay></video>
+                        </div>
+                    </div>
+                    <div class="videoFooter">
+                        <div class="vidBtn">
+                            <div class="borderGive">
+                                <button id="videoBtn" onclick="videoBtnClicked()" class="iconBtn border-gradient"><img id="videoimg" src="./VideoOn.4fc76b20.svg" alt="video off"></button>
+                            </div>
+                            <p class="vidFootertxt">Video Settings</p>
+                        </div>
+                        <div class="micBtn">
+                            <button id="micBtn" onclick="micBtnClicked()" class="iconBtn border-gradient">
+                                <img id="micImg" src="./MicOn.d3732787.svg" alt="Mic On">
+                            </button>
+                            <p class="vidFootertxt">Audio Settings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loginDiv">
+                <div class="upper">
+                    <div class="loginHeader">
+                        <p>Have a Look Around</p>
+                        <h2>Review how your audio and video work in calls</h2>
+                    </div>
+                    <div class="inputSections">
+                        <div class="usernameDiv">
+                        <p>Your Name*</p>
+                        <input class="loginInput" type="text" id="userName" placeholder="   Please enter your name">
+                        </div>
+                        <div class="passwordDiv">
+                            <p>Password</p>
+                        <input class="loginInput" type="text" id="userName" placeholder="   Please enter password (If you have one)">
+                        </div>
+                </div>
+                <div class="lower">
+                    <button class="submitBtn">
+                        Start Meeting
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
